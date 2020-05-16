@@ -18,6 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
+      working-directory: /home/runner/work/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
