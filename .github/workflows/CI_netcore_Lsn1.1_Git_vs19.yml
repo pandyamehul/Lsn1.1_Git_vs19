@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - working-directory: /usr/bin/git/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19
+        local: /usr/bin/git/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19/
     - name: Install dependencies
       run: dotnet restore
     - name: Build
