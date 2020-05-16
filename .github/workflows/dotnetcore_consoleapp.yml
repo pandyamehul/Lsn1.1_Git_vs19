@@ -18,7 +18,6 @@ jobs:
       with:
         dotnet-version: 3.0.100
         app-name: Lsn1.1_Git_vs19
-    - working-directory: /usr/bin/git init /home/runner/work/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19
     - name: Install dependencies
       run: dotnet restore
     - name: Build
