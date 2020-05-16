@@ -1,0 +1,8 @@
+﻿Step# 1 - Open Visual studio 2019, did not selected any project and loaded simply.
+
+Step# 2 - Navigated to the Team Expleror and from there under Git section created new Repo. Given basic information while creating repo.
+
+Step# 3 - After creating repo, from repo created new projct as console app.
+
+Step# 4 - Created initilal master branch for the repo.
+
