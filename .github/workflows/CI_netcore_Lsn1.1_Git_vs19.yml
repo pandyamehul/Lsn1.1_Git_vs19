@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore -s \ConApp_Lsn1.1_Git_vs19
+      run: dotnet restore -s /usr/bin/git/Lsn1.1_Git_vs19
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
