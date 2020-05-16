@@ -17,8 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
+    - working-directory: \ConApp_Lsn1.1_Git_vs19
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore 
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
