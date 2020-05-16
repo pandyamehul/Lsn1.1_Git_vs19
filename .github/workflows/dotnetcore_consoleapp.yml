@@ -19,8 +19,8 @@ jobs:
         dotnet-version: 3.1.101
         app-name: Lsn1.1_Git_vs19
     - name: Install dependencies
-      run: dotnet restore ConApp_Lsn1.1_Git_vs19\ConApp_Lsn1.1_Git_vs19.csproj
+      run: dotnet restore /usr/bin/git/ConApp_Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19.csproj
     - name: Build
-      run: dotnet build ConApp_Lsn1.1_Git_vs19\ConApp_Lsn1.1_Git_vs19.csproj --configuration Release --no-restore
-    - name: Test
+      run: dotnet build /usr/bin/git/ConApp_Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19.csproj --configuration Release --no-restore
+    - name: Unit Test
       run: dotnet test --no-restore --verbosity normal
