@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1.101
         #local: /home/runner/work/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19/
     - name: Install dependencies
-      run: dotnet restore /home/runner/work/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19.csproj
+      run: dotnet restore ~/home/runner/work/Lsn1.1_Git_vs19/Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19/ConApp_Lsn1.1_Git_vs19.csproj
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
